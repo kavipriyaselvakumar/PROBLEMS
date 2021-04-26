@@ -18,3 +18,27 @@ int main()
 		}
 	}
 }
+//alternate solution
+#include<iostream>
+#include<algorithm>
+using namespace std;
+int main()
+{
+    int n;
+    cin>>n;
+    int j,a[n];
+    for(j=0;j<n;j++)
+    {
+        cin>>a[j];
+    }
+    int i=0,mid=n/2,k=n-1;
+    sort(a,a+n);
+    while(i<mid)
+    {
+        cout<<a[k];
+        cout<<a[i];
+        i++;
+        k--;
+
+    }
+}
